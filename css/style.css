@@ -1,0 +1,69 @@
+.background{
+    width: 100%;
+    height: 100vh;
+}
+
+.sun-move{
+    position: relative;
+}
+
+.sun{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 30px;
+    bottom: 380px;
+    animation-name: sunanimation;
+    animation-duration: 10s;
+    animation-timing-function: infinite;
+    animation-delay: 0s;
+}
+
+.dog-move{
+    position: relative;
+}
+
+.dog{
+    width: 300px;
+    height: 150px;
+    animation-name: doganimation;
+    animation-duration: 15s;
+    animation-timing-function: infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+    position: absolute;
+    bottom: 50px;
+}
+
+.clous-move{
+    position: relative;
+}
+
+.cloud{
+    width: 300px;   
+    height: 150px;
+    animation-name: cloudanimation;
+    animation-duration: 7s;
+    animation-timing-function: infinite;
+    animation-direction: alternate;
+    animation-delay: 0s;
+    position: absolute;
+    bottom: 360px;
+    left: 40%;
+}
+
+@keyframes sunanimation{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes doganimation{
+    from {left: 0;}
+    to {left: 80%;}
+}
+
+@keyframes cloudanimation  {
+    0%{transform: translateY(-40px);}
+   50%{transform: translateY(40px);}
+   100%{transform: translateY(-40px);}
+   }
